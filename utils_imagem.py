@@ -41,16 +41,7 @@ def find_largest_contour_position(imagem_binarizada):
     else:
         return None
 def inserir_imagem(imagem_base_path, imagem_inserida_path, x, y, largura, altura):
-    """
-    Insere uma imagem em uma posição específica dentro de outra imagem.
-
-    :param imagem_base_path: Caminho para a imagem base.
-    :param imagem_inserida_path: Caminho para a imagem que será inserida.
-    :param x: Coordenada X (canto superior esquerdo) onde a imagem será inserida.
-    :param y: Coordenada Y (canto superior esquerdo) onde a imagem será inserida.
-    :param largura: Largura da imagem a ser inserida.
-    :param altura: Altura da imagem a ser inserida.
-    """
+    
     imagem_base = cv2.imread(imagem_base_path)
 
     imagem_inserida = cv2.imread(imagem_inserida_path)
